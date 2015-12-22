@@ -3,7 +3,6 @@
 //  fn Toggle
 //
 //  Created by John Groenhof on 12/20/15.
-//  Copyright © 2015 Spiraal. All rights reserved.
 //
 
 import Cocoa
@@ -21,9 +20,7 @@ class AppDelegate: NSObject, NSApplicationDelegate {
 
     func applicationDidFinishLaunching(aNotification: NSNotification) {
         
-        
-        
-        
+        // Sets icon and enables dark mode inversion
         let icon = NSImage(named: "statusIcon")
         icon!.template = true
         
@@ -36,10 +33,8 @@ class AppDelegate: NSObject, NSApplicationDelegate {
     // "Toggle fn" menuItem
     @IBAction func menuClicked(sender: NSMenuItem) {
         
-        
         let scriptLoc = NSBundle.mainBundle().pathForResource("fnToggle", ofType: "applescript")!
         
-
         // Launches OSASCRIPT and runs fnToggle script file
         let task = NSTask()
         task.launchPath = "/usr/bin/osascript"
@@ -63,7 +58,7 @@ class AppDelegate: NSObject, NSApplicationDelegate {
 
 /*
 
-    AppleScript code in fnToggle.scpt:
+    AppleScript code in fnToggle.applescript:
     
     tell application "System Preferences"
         reveal anchor "keyboardTab" of pane "com.apple.preference.keyboard"
