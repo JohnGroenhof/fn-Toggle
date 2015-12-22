@@ -21,6 +21,9 @@ class AppDelegate: NSObject, NSApplicationDelegate {
 
     func applicationDidFinishLaunching(aNotification: NSNotification) {
         
+        
+        
+        
         let icon = NSImage(named: "statusIcon")
         icon!.template = true
         
@@ -33,13 +36,17 @@ class AppDelegate: NSObject, NSApplicationDelegate {
     // "Toggle fn" menuItem
     @IBAction func menuClicked(sender: NSMenuItem) {
         
+        
+        let scriptLoc = NSBundle.mainBundle().pathForResource("fnToggle", ofType: "applescript")!
+        
+
         // Launches OSASCRIPT and runs fnToggle script file
         let task = NSTask()
         task.launchPath = "/usr/bin/osascript"
-        task.arguments = ["/Users/John/fnToggle.scpt"]
+        task.arguments = [scriptLoc]
         
         task.launch()
-        
+
     }
     
     

@@ -10,6 +10,8 @@
 		5209E1D61C2757FB0069F18E /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5209E1D51C2757FB0069F18E /* AppDelegate.swift */; };
 		5209E1D81C2757FB0069F18E /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 5209E1D71C2757FB0069F18E /* Assets.xcassets */; };
 		5209E1DB1C2757FB0069F18E /* MainMenu.xib in Resources */ = {isa = PBXBuildFile; fileRef = 5209E1D91C2757FB0069F18E /* MainMenu.xib */; };
+		52F343021C29140C009AE9B4 /* fnToggle.applescript in Sources */ = {isa = PBXBuildFile; fileRef = 52F343011C29140C009AE9B4 /* fnToggle.applescript */; };
+		52F343031C29143E009AE9B4 /* fnToggle.applescript in Resources */ = {isa = PBXBuildFile; fileRef = 52F343011C29140C009AE9B4 /* fnToggle.applescript */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -18,7 +20,7 @@
 		5209E1D71C2757FB0069F18E /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		5209E1DA1C2757FB0069F18E /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.xib; name = Base; path = Base.lproj/MainMenu.xib; sourceTree = "<group>"; };
 		5209E1DC1C2757FB0069F18E /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
-		52F342FF1C290741009AE9B4 /* fnToggle.scpt */ = {isa = PBXFileReference; lastKnownFileType = file; path = fnToggle.scpt; sourceTree = "<group>"; };
+		52F343011C29140C009AE9B4 /* fnToggle.applescript */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.applescript; path = fnToggle.applescript; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -55,7 +57,7 @@
 				5209E1D71C2757FB0069F18E /* Assets.xcassets */,
 				5209E1D91C2757FB0069F18E /* MainMenu.xib */,
 				5209E1DC1C2757FB0069F18E /* Info.plist */,
-				52F342FF1C290741009AE9B4 /* fnToggle.scpt */,
+				52F343011C29140C009AE9B4 /* fnToggle.applescript */,
 			);
 			path = "fn Toggle";
 			sourceTree = "<group>";
@@ -119,6 +121,7 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				52F343031C29143E009AE9B4 /* fnToggle.applescript in Resources */,
 				5209E1D81C2757FB0069F18E /* Assets.xcassets in Resources */,
 				5209E1DB1C2757FB0069F18E /* MainMenu.xib in Resources */,
 			);
@@ -132,6 +135,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				5209E1D61C2757FB0069F18E /* AppDelegate.swift in Sources */,
+				52F343021C29140C009AE9B4 /* fnToggle.applescript in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -236,6 +240,7 @@
 				CODE_SIGN_IDENTITY = "Mac Developer";
 				"CODE_SIGN_IDENTITY[sdk=macosx*]" = "Mac Developer";
 				COMBINE_HIDPI_IMAGES = YES;
+				DEFINES_MODULE = NO;
 				INFOPLIST_FILE = "fn Toggle/Info.plist";
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/../Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = "com.spiraal.fn-Toggle";
@@ -251,6 +256,7 @@
 				CODE_SIGN_IDENTITY = "Mac Developer";
 				"CODE_SIGN_IDENTITY[sdk=macosx*]" = "Mac Developer";
 				COMBINE_HIDPI_IMAGES = YES;
+				DEFINES_MODULE = NO;
 				INFOPLIST_FILE = "fn Toggle/Info.plist";
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/../Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = "com.spiraal.fn-Toggle";
